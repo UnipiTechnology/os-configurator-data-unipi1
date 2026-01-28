@@ -13,5 +13,3 @@
 .libs
 debian/tmp/
 debian/changelog
-debian/unipi-os-configurator-data.postinst
-debian/unipi-os-configurator-data.preinst

@@ -25,6 +25,6 @@ This file must contain text:
 
 - After changing configuration, call os-configurator and reboot 
 
-    /opt/unipi/tools/os-configurator --force
+    os-configurator --force
     reboot
 

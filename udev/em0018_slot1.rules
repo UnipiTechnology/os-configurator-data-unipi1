@@ -1,1 +1,1 @@
-ACTION=="add|remove", SUBSYSTEM=="gpio", DEVPATH=="*/i2c-1/1-0021/gpiochip*",  RUN+="/opt/unipi/tools/uhelper RO_EMO1 gpiochip 1 $name"
+ACTION=="add|remove", SUBSYSTEM=="gpio", DEVPATH=="*/i2c-1/1-0021/gpiochip*",  RUN+="/usr/lib/unipi/uhelper RO_EMO1 gpiochip 1 $name"

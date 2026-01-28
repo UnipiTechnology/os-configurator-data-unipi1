@@ -1,4 +1,4 @@
-ACTION=="add|remove", SUBSYSTEM=="gpio", DEVPATH=="*/soc/3f200000.gpio/gpiochip*",  RUN+="/opt/unipi/tools/uhelper DI gpiochip 0 $name"
-ACTION=="add|remove", SUBSYSTEM=="gpio", DEVPATH=="*/soc/fe200000.gpio/gpiochip*",  RUN+="/opt/unipi/tools/uhelper DI gpiochip 0 $name"
-ACTION=="add|remove", SUBSYSTEM=="gpio", DEVPATH=="*/axi/1000120000.pcie/1f000d0000.gpio/gpiochip*",  RUN+="/opt/unipi/tools/uhelper DI gpiochip 0 $name"
-ACTION=="add|remove", SUBSYSTEM=="gpio", DEVPATH=="*/i2c-1/1-0020/gpiochip*",  RUN+="/opt/unipi/tools/uhelper RO gpiochip 0 $name"
+ACTION=="add|remove", SUBSYSTEM=="gpio", DEVPATH=="*/soc/3f200000.gpio/gpiochip*",  RUN+="/usr/lib/unipi/uhelper DI gpiochip 0 $name"
+ACTION=="add|remove", SUBSYSTEM=="gpio", DEVPATH=="*/soc/fe200000.gpio/gpiochip*",  RUN+="/usr/lib/unipi/uhelper DI gpiochip 0 $name"
+ACTION=="add|remove", SUBSYSTEM=="gpio", DEVPATH=="*/axi/1000120000.pcie/1f000d0000.gpio/gpiochip*",  RUN+="/usr/lib/unipi/uhelper DI gpiochip 0 $name"
+ACTION=="add|remove", SUBSYSTEM=="gpio", DEVPATH=="*/i2c-1/1-0020/gpiochip*",  RUN+="/usr/lib/unipi/uhelper RO gpiochip 0 $name"
