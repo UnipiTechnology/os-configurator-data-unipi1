@@ -1,1 +1,1 @@
-deb [signed-by=/usr/share/keyrings/unipi_next.asc] https://repo.unipi.technology/debian ##DEBIAN_VERSION## unipi1-main main unipi1-test test
+deb [signed-by=/usr/share/keyrings/unipi_next.asc] https://repo.unipi.technology/debian ##DEBIAN_VERSION## unipi1-main main
