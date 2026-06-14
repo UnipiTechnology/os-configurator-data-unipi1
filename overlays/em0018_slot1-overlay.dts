@@ -8,13 +8,14 @@
 		target = <&i2c1>;
 
 		__overlay__ {
-			#address-cells = <0x01>;
-			#size-cells = <0x00>;
+			#address-cells = <1>;
+			#size-cells = <0>;
 			status = "okay";
 
 			mcp23008_1: mcp23008@21 {
 				compatible = "microchip,mcp23008";
 				reg = <0x21>;
+				gpio-controller;
 				status = "okay";
 			};
 		};

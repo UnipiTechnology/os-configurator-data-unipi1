@@ -1,4 +1,4 @@
-
+dtss += unipi_uboot-overlay.dts
 dtss += unipi_rtc-overlay.dts
 dtss += unipi_id-overlay.dts
 dtss += unipi_rpi3-overlay.dts

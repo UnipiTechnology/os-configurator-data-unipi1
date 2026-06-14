@@ -10,7 +10,5 @@
 # raid1
 # sd_mod
 i2c-bcm2835
-rtc-unipi
 at24
 i2c-dev
-## unipi-id # DONT USE THIS IN initramdisk

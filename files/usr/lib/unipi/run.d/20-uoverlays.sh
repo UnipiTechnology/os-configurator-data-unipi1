@@ -5,7 +5,7 @@
 [ -z "$DT" ] && exit
 [ -f /etc/bootcmd.d/Makefile ] || exit 0
 
-if [ -n "$USE_DS2482" ]; then
+if [ -n "$HAS_DS2482" ]; then
     DT="${DT} ds2482"
 fi
 

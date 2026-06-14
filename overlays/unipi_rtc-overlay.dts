@@ -6,12 +6,12 @@
 		target = <&i2c1>;
 
 		__overlay__ {
-			#address-cells = <0x01>;
-			#size-cells = <0x00>;
+			#address-cells = <1>;
+			#size-cells = <0>;
 			status = "okay";
 
 			mcp7940x@6f {
-				compatible = "unipi,rtc-unipi";
+				compatible = "microchip,mcp7941x";
 				reg = <0x6f>;
 				status = "okay";
 			};

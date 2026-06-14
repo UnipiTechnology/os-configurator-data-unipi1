@@ -4,11 +4,11 @@ Priority: optional
 Maintainer: Miroslav Ondra <ondra@unipi.technology>
 Build-Depends: debhelper (>= 13), debhelper-compat (= 13)
 Standards-Version: 3.9.8.0
-Homepage: www.unipi.technology
-#Vcs-Git: https://git.unipi.technology/UniPi/os-configurator/data-unipi1
-#Vcs-Browser: https://git.unipi.technology/UniPi/os-configurator/data-unipi1
+Homepage: https://www.unipi.technology/
+Vcs-Git: https://github.com/UnipiTechnology/os-configurator-data-unipi1
+Vcs-Browser: https://github.com/UnipiTechnology/os-configurator-data-unipi1.git
 
 Package: unipi-os-configurator-data
 Architecture: ###ARCH### 
-Description: Unipi 1.1 specific data for Unipi OS configurator
+Description: Unipi 1 specific data for Unipi OS configurator
 Depends: unipi-os-configurator 
