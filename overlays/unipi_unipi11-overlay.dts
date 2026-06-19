@@ -4,27 +4,6 @@
 / {
 	compatible = "brcm,bcm2835";
 
-	fragment@0 {
-		target = <&gpio>;
-		__overlay__ {
-			pwm_pins5: pwm_pins5 {
-				/* this part is for RPi5 */
-				function = "alt3";
-				pins = "gpio18";
-				bias-disable;
-			};
-		};
-	};
-
-	fragment@1 {
-		target = <&pwm>;
-		frag1: __overlay__ {
-			pinctrl-names = "default";
-			pinctrl-0 = <&pwm_pins5>;
-			status = "okay";
-		};
-	};
-
 	fragment@2 {
 		target = <&i2c1>;
 

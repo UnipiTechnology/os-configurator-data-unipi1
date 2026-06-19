@@ -7,9 +7,10 @@
 	fragment@0 {
 		target = <&gpio>;
 		__overlay__ {
-			pwm_pins3: pwm_pins3 {
-				brcm,pins = <18>;
-				brcm,function = <2>; /* Alt5 */
+			pwm_pins5: pwm_pins5 {
+				function = "alt3";
+				pins = "gpio18";
+				bias-disable;
 			};
 		};
 	};
@@ -17,9 +18,8 @@
 	fragment@1 {
 		target = <&pwm>;
 		__overlay__ {
-			assigned-clock-rates = <100000000>;
 			pinctrl-names = "default";
-			pinctrl-0 = <&pwm_pins3>;
+			pinctrl-0 = <&pwm_pins5>;
 			status = "okay";
 		};
 	};

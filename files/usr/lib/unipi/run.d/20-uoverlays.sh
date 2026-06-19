@@ -13,7 +13,9 @@ if [ -n "$HAS_RTC" ]; then
     DT="${DT} unipi_rtc"
 fi
 
-if ! grep -q "raspberrypi,5-model-b" /sys/firmware/devicetree/base/compatible; then
+if grep -q "raspberrypi,5-model-b" /sys/firmware/devicetree/base/compatible; then
+    DT="${DT} unipi_rpi5"
+else
     DT="${DT} unipi_rpi3"
 fi
 

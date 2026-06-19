@@ -31,7 +31,9 @@ for overlay in ${DT}; do
     echo "dtoverlay=$overlay"
 done
 
-if ! grep -q "raspberrypi,5-model-b" /sys/firmware/devicetree/base/compatible; then
+if grep -q "raspberrypi,5-model-b" /sys/firmware/devicetree/base/compatible; then
+    echo "dtoverlay=unipi_rpi5"
+else
     echo "dtoverlay=unipi_rpi3"
 fi
 

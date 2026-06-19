@@ -2,6 +2,7 @@ dtss += unipi_uboot-overlay.dts
 dtss += unipi_rtc-overlay.dts
 dtss += unipi_id-overlay.dts
 dtss += unipi_rpi3-overlay.dts
+dtss += unipi_rpi5-overlay.dts
 dtss += ds2482-overlay.dts
 
 dtss += unipi_unipi11-overlay.dts
